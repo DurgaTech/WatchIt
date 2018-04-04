@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "926140733396",
+    "firebase_url": "https://watchit-18372.firebaseio.com",
+    "project_id": "watchit-18372",
+    "storage_bucket": "watchit-18372.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926140733396:android:3583f5de04f8c19b",
+        "android_client_info": {
+          "package_name": "com.durgasamples412.watchit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926140733396-arbk0crm931b1eo1kj7a57st3e2mdi4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.durgasamples412.watchit",
+            "certificate_hash": "abeec9be9f44db3243864d7a2eba4a198ff474b6"
+          }
+        },
+        {
+          "client_id": "926140733396-hb90bf4mvrdpbeqab2f3s8ufes3dam20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAeao5YDtUZmLShbUaoxg5RfkDzIpIPto"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926140733396-hb90bf4mvrdpbeqab2f3s8ufes3dam20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

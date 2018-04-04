@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.durgasamples412.watchit.MainActivity"
+    android:background="@color/colorPrimaryDark"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/layout_upcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:fontFamily="@font/fira_mono_medium"
+                android:text="@string/upcoming"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/text_view_view_all_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:clickable="true"
+                android:text="@string/viewall"
+                android:fontFamily="@font/fira_mono_medium"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+             />
+
+            <FrameLayout
+                android:id="@+id/layout_Now_showing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/now_showing"
+                    android:fontFamily="@font/fira_mono_medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                   />
+
+                <TextView
+                    android:id="@+id/text_view_view_all_nowshowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:clickable="true"
+                    android:text="@string/viewall"
+                    android:fontFamily="@font/fira_mono_medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_nowshowing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                />
+
+            <FrameLayout
+                android:id="@+id/layout_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/popular_movies"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/fira_mono_medium"
+                    android:textColor="@android:color/white"
+                   />
+
+                <TextView
+                    android:id="@+id/text_view_view_all_popular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:clickable="true"
+                    android:text="@string/viewall"
+                    android:fontFamily="@font/fira_mono_medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/layout_top_rated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/top_rated"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/fira_mono_medium"
+                    android:textColor="@android:color/white"
+                     />
+
+                <TextView
+                    android:id="@+id/text_view_view_all_toprated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:clickable="true"
+                    android:text="@string/viewall"
+                    android:fontFamily="@font/fira_mono_medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_toprated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/fab_margin"
+                android:nestedScrollingEnabled="false"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.v4.widget.NestedScrollView>

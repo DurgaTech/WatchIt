@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Watch It</string>
+    <string name="action_settings">Settings</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="viewall">More...</string>
+    <string name="tmdb_pi_key">d69f241d002475637784bf12d1e1cdb9</string>
+    <string name="now_showing">Now Showing</string>
+    <string name="popular">Popular</string>
+    <string name="popular_movies">Popular</string>
+    <string name="title_activity_all_up_coming">All UpComing</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="title_activity_movie_details">MovieDetails</string>
+    <string name="cast">Cast</string>
+    <string name="crew">Crew</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trailers">Trailers</string>
+
+</resources>
